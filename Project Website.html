@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>D-B-D</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container-navbar">
+        <div class="logo"><a href="#" >V-GT</a></div>
+        <ul class="ul-navbar">
+            <li class="li-navbar"><a class="li-a-navbar" href="#pelajari">Pelajari</a></li>
+            <li class="li-navbar"><a class="li-a-navbar" href="#kenali">Kenali</a></li>
+            <li class="li-navbar"><a class="li-a-navbar" href="#tangani">Tangani</a></li>
+        </ul>
+        <div class="boxmenu-navbar" id="menu-icon">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <div class="box-navbar">
+            <li class="li-navbar"><a class="li-a-navbar" href="#pelajari">Pelajari</a></li>
+            <li class="li-navbar"><a class="li-a-navbar" href="#kenali">Kenali</a></li>
+            <li class="li-navbar"><a class="li-a-navbar" href="#tangani">Tangani</a></li>
+        </div>
+    </div>
+    <!--Navbar end-->
+    <!--home-->
+    <div class="container-home">
+        <div class="box1-home" ></div>
+        <div class="box2-home">
+            <h2>Bisakah kita <strong>melindungi orang</strong> yang kita <strong>sayangi?</strong></h2>
+            <p>Demam Bedarah masih berada di sekitar kita dan mengancam lebih dari 100 ribu orang pada tahun 2022.</p>
+            <p>Lindungi mereka yang anda sayangi dengan mengenalnya lebih jauh......</p>
+            <button href="#pelajari"><a href="#pelajari">Lanjutkan!</a></button>
+        </div>
+    </div>
+    <!--home end-->
+
+    <!--content-1-->
+    <div class="container-content1">
+        <div class="box1-content1">
+            <h2 id="pelajari">Siapa Demam Berdarah?</h2>
+            <p>Demam berdarah Dengue (DBD) adalah penyakit yang disebabkan virus dengue yang ditularkan melalui nyamuk Aedes aegypti atau Aedes albopictus, biasanya terdapat di daerah tropis dan subtropis di dunia. Gejala paling umum adalah demam tinggi hingga lemas yang bisa menyebabkan kematian. Penyakit ini masih menjadi salah satu isu kesehatan masyarakat di Indonesia. Bahkan, tingkat keterjangkitan penyakit ini di Indonesia masih salah satu yang tertinggi di antara negara-negara Asia Tenggara.</p>
+            <div class="img">
+                <h2>Siapa Demam Berdarah?</h2>
+            </div>
+        </div>
+    </div>
+    <!--content-1 end-->
+
+    <!--content-2-->
+    <div class="container-content2" id="kenali">
+        <div class="box1-content2">
+            <h2>Kenali Gejalanya sebelum terlambat!</h2>
+            <p>Banyak dari kita belum mengetahui gejala demam berdarah, karena inilah banyak pasein demam berdarah mendapatkan penanganan. Gejala yang mirip dengan demam bisa membuat kita lengah akan terjangkitnya demam berdarah. Tanda  demam berdarah biasanya akan muncul 4 -10 hari setelah terkena gigitan nyamuk</p>
+        </div>
+        <div class="box2-content2">
+            <!-- slide element-->
+            <div class="slides-content2">
+                <div class="img-content2">
+                    <img src="picture/pic-demamtinggi.jpg">
+                    <p>Demam tinggi</p>
+                </div>
+                <div class="img-content2">
+                    <img src="picture/pic-mualdanmuntah.jpg">
+                    <p>Merasa mual dan muntah</p>
+                </div>
+                <div class="img-content2">
+                    <img src="picture/pic-sakitkepala.jpg">
+                    <p>Sakit kepala</p>
+                </div>
+                <div class="img-content2">
+                    <img src="picture/pic-bintikmerah.jpg">
+                    <p>Timbul bintik merah</p>
+                </div>
+                <div class="img-content2">
+                    <img src="picture/pic-nyerisendi,tulang,danotot.jpg">
+                    <p>Sendi dan otot terasa nyeri</p>
+                </div>
+            </div>
+            <div class="next-content2">
+                <span class="next"><i class='bx bx-chevron-right'></i></span>
+                <span class="prev"><i class='bx bx-chevron-left'></i></span>
+            </div>
+            <div class="nav-content2">
+                <div class="nav1-content2 active" attr="0" onclick="switchimage(this)" ></div>
+                <div class="nav2-content2" attr="1" onclick="switchimage(this)"></div>
+                <div class="nav3-content2" attr="2" onclick="switchimage(this)"></div>
+                <div class="nav4-content2" attr="3" onclick="switchimage(this)"></div>
+                <div class="nav5-content2" attr="4" onclick="switchimage(this)"></div>
+            </div>
+        </div>
+    </div>
+    <!--content-2 end-->
+
+    <!-- content-3 -->
+    <div id="tangani" class="container-content3">
+        <div class="box1-content3">
+            <div class="shape-content3">
+                <p>Lindungi Mereka, Jaga Mereka</p>
+            </div>
+        </div>
+        <div class="box2-content3">
+            <h2 class="head-content3">Ada banyak faktor untuk resiko terjangkit  Demam Berdarah</h2>
+            <div class="card2-content3">
+                <img src="picture/pic-22.jpg" alt="">
+                <p>Tinggal atau berpergian di daerah yang beriklim trpois, Terutama daerah berisiko tinggi termasuk Asia Tenggara, pulau-pulau Pasifik barat, Amerika Latin dan Afrika.</p>
+            </div>
+            <div class="card1-content3">
+                <img src="picture/pic-3.png" alt="">
+                <p>Pernah terjangkit DBD sebelumnya, jika sebelumnya pernah terinfeksi  bisa meningkatkan gejala resiko jika terkena lagi</p>
+            </div>
+            <div class="card3-content3">
+                <img src="picture/pic-21.jpg" alt="">
+                <p>Usia dibawah 15 tahun, rata-rata usia yang terjangkit DBD berada di bawah 15 tahun.</p>
+            </div>
+        </div>
+    </div>
+    <!-- content-3-end -->
+    <!--Content-4-->
+    <div class="container-content4">
+        <div class="box1-content4">
+            <p class="p-box1-4">Organisasi Kesehatan Dunia (WHO) menekankan bahwa vaksin itu sendiri bukanlah alat yang efektif untuk mengurangi demam berdarah di daerah-daerah di mana penyakit ini sering mewabah.</p>
+            <p class="p-box1-4">Pencegahan menjadi langkah penting dalam menghindari gigitan nyamuk dan mengurangi resiko terjangkit DBD.</p>
+        </div>
+        <div class="box2-content4">
+            <h2 class="h-box2-4">Beberapa langkah pencegahan yang bisa diambil...</h2>
+            <ul class="ul-box2-4">
+                <li>Merapikan barang barang bekas guna menghindari sarang nyamuk </li>
+                <li>Kenakan pakaian tertutup saat berpergian, dan menggunakan lotion</li>
+                <li>Rutin melakukan langkah tiga M (menguras bak mandi, mengubur, dan mendaur ulang barang bekas)</li>
+                <li>Melakukan fogging di sekitar lingkungan</li>
+            </ul>
+        </div>
+    </div>
+    <!--Content-4-end-->
+
+    <!--Content-5-->
+    <div class="container-content5">
+        <div class="box1-container5">
+            <div class="shape-content5">
+                <p>Berikan Penanganan Yang Tepat Kepada Mereka</p>
+            </div>
+        </div>
+        <div class="box2-container-5">
+           <input type="radio" name="slide" id="c1-B2-5" checked >
+           <label for="c1-B2-5" class="card-box2-5">
+                <div class="label-box2-5">
+                    <div class="icon-box2-5">1</div>
+                    <div class="text-box2-5">
+                        <h4>Bedrest Total</h4>
+                    </div>
+                </div>
+           </label>
+           <input type="radio" name="slide" id="c2-B2-5" checked >
+           <label for="c2-B2-5" class="card-box2-5">
+                <div class="label-box2-5">
+                    <div class="icon-box2-5">2</div>
+                    <div class="text-box2-5">
+                        <h4>Perbanyak Minum Cairan</h4>
+                    </div>
+                </div>
+           </label><input type="radio" name="slide" id="c3-B2-5" checked >
+           <label for="c3-B2-5" class="card-box2-5">
+                <div class="label-box2-5">
+                    <div class="icon-box2-5">3</div>
+                    <div class="text-box2-5">
+                        <h4>Pemberian Cairan Infus</h4>
+                    </div>
+                </div>
+           </label><input type="radio" name="slide" id="c4-B2-5" checked >
+           <label for="c4-B2-5" class="card-box2-5">
+                <div class="label-box2-5">
+                    <div class="icon-box2-5">4</div>
+                    <div class="text-box2-5">
+                        <h4>Pemberian Obat</h4>
+                    </div>
+                </div>
+           </label><input type="radio" name="slide" id="c5-B2-5" checked >
+           <label for="c5-B2-5" class="card-box2-5">
+                <div class="label-box2-5">
+                    <div class="icon-box2-5">5</div>
+                    <div class="text-box2-5">
+                        <h4>Konsultasi Dokter</h4>
+                    </div>
+                </div>
+           </label>
+        </div>
+    </div>
+    <!--Content-5-end-->
+
+    <!--Footer-->
+    <div class="container-footer">
+        <div class="box1-footer">
+            <div class="text-footer">
+                <h5>tentang</h5>
+            <p>Sebuah website edukasi biologi yang membahas Demam Berdarah Dengue, dibuat untuk memeuhi tugas siswa pada mapel biologi</p>
+            <h5>profile</h5>
+            <table>
+                <tr>
+                    <td>Nama :</td>
+                    <td>Achmad Sa'id Al Bukhari</td>
+                </tr>
+                <tr>
+                    <td>Kelas :</td>
+                    <td>XII-MIPA3</td>
+                </tr>
+                <tr>
+                    <td>Sekolah :</td>
+                    <td>MAN Insan Cendekia</td>
+                </tr>
+            </table>
+            </div>
+            <img src="picture/pic-23.jpg" alt="">
+        </div>
+        <div class="box2-footer">
+            <h5>Kontak Saya</h5>
+            <div class="icon-footer">
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxs-envelope'></i>
+            </div>    
+            <p>© 2023 Bio-Logic</p>
+        </div>
+    </div>
+    <!--Footer-end-->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
