@@ -287,6 +287,7 @@ body {
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box1-content2 {
@@ -315,120 +316,93 @@ body {
 }
 
 .box2-content2 {
+    width: 100%;
+    height: 450px;
+    display: flex;
     position: relative;
-    width: 800px;
-    overflow: hidden;
-    border-radius: 15px;
-    height: 350px;
-    padding-bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
 }
 
-.next-content2{
-    width: 800px;
+.slides {
+    width: 100%;
+	height: calc(100% - 35px);
+	position: absolute;
+	overflow: hidden;
+}
+
+.slides div{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.slides div h5{
+    color: #4A6FA5;
+    font: 32px 'Fredoka';
+    background-color: #8fb8ca;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    padding: 4px;
+}
+
+.img1-content2 {
+    background-image: url(picture/pic-bintikmerah.jpg);
+    background-size: cover;
+}
+
+.img2-content2 {
+    background-image: url(picture/pic-demamtinggi.png);
+    background-size: cover;
+}
+
+.img3-content2 {
+    background-image: url(picture/pic-mualdanmuntah.png);
+    background-size: cover;
+}
+
+.img4-content2 {
+    background-image: url(picture/pic-nyerisendi\,tulang\,danotot.png);
+    background-size: cover;
+}
+
+.img5-content2 {
+    background-image: url(picture/pic-sakitkepala.png);
+    background-size: cover;
+}
+
+.buttons {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    color: #4A6FA5;
+    font-size: 34px;
+    width: 100%;
+    z-index: 10;
+    display: flex; 
+    top: 40%;
 }
 
-
-.next:hover{
-    background-color: rgb(143, 184, 202, 0.4);
-    color: #91AC9A;
+.buttons div{
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
 }
 
-.prev:hover{
-    background-color: rgb(143, 184, 202, 0.4);
-    color: #91AC9A;
+.buttons div:hover{
+    background-color: #91ac9abb;
+    border-radius: 10px;
 }
 
-.next {
+.buttons .next{
     position: absolute;
     right: 20px;
-    border-radius: 10px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.5s;
-    border-radius: 3px;
-    user-select: none;
-    cursor: pointer;
-    z-index: 1;
-    color: #4A6FA5;
 }
 
-.prev {
+.buttons .prev{
     position: absolute;
-    border-radius: 10px;
     left: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    transition: 0.5s;
-    border-radius: 3px;
-    user-select: none;
-    cursor: pointer;
-    z-index: 1;
-    color: #4A6FA5;
-}
-
-.slides-content2 {
-    width: 100%;
-	height: calc(100% - 40px);
-	position: relative;
-	overflow: hidden;
-    padding: 0;
-}
-
-.img-content2 img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    position: absolute;
-    object-fit: cover;
-    object-position: top;
-}
-
-.img-content2 p{
-    position: absolute;
-    bottom: 10px;
-    color: #4A6FA5;
-    background-color: #CEDFDF;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 32px;
-    font-weight: 500;
-    border-radius: 5px;
-    padding: 2px 5px;
-}
-
-.nav-content2 {
-    position: absolute;
-    bottom: 5px;
-    z-index: 3;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.nav-content2 div{
-    border: 2px solid #8fb8ca;
-    width: 5px;
-    height: 5px;
-    margin: 0px 2px;
-    padding: 5px;
-    display: inline-block;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color o.6 ease;
-}
-
-.nav-content2 div:hover{
-    background-color: #4A6FA5;
-    border: #91AC9A 2px solid;
-}
-
-.nav-content2 div .active{
-    background-color: #4A6FA5;
 }
 
 @keyframes next1{
@@ -464,6 +438,7 @@ body {
         left: 0%;
     }
 }
+
 /* content-2-end*/
 
 /* content-3-start*/
@@ -479,11 +454,11 @@ body {
 .box1-content3 {
     width: 100%;
     margin-top: 0%;
-    height: 225px;
+    height: 180px;
     display: flex;
-    flex-wrap: wrap;
     background-image: url(picture/pic_41.jpg);
-    
+    background-position: center;
+    background-size: cover; 
 }
 
 .shape-content3 {
@@ -491,11 +466,13 @@ body {
     background-color: rgb(145, 172, 154, 0.65);
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .box1-content3 p{
     color: #4A6FA5;
-    font: 62px 'Fredoka';
+    font: 700 52px 'Fredoka';
     top: 0%;
     width: 100%;
     height: 100%;
@@ -609,6 +586,7 @@ body {
     width: 100%;
     background-image: url(picture/pic-16.jpg);
     background-size: cover;
+    background-position: center;
     height: 180px;
     display: flex;
     justify-content: center;
@@ -621,7 +599,10 @@ body {
     color: #4A6FA5;
     background-color: rgb(145, 172, 154, 0.75);
     text-align: center;
-    font: 42px 'Fredoka';
+    font: 700 42px 'Fredoka';
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2-container-5 {
@@ -737,12 +718,15 @@ input:checked + label .text-box2-5 {
 
 .box1-footer {
     width: calc(100%-70px);
+    height: fit-content;
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
 }
 
 .text-footer {
     width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .box1-footer h5 {
@@ -750,6 +734,13 @@ input:checked + label .text-box2-5 {
     font: 32px 'Fredoka';
     text-align: left;
     margin: 0%;
+}
+
+.text-footer a {
+    color: #8fb8ca;
+    font: 24px 'Fredoka';
+    width: fit-content;
+    padding-left: 20px;
 }
 
 .box1-footer p {
@@ -770,10 +761,13 @@ input:checked + label .text-box2-5 {
 
 .box1-footer img {
     width: 340px;
+    height: auto;
     object-fit: cover;
     object-position: top;
     position: absolute;
-    right: 45px;
+    right: 10px;
+    bottom: 15px;
+    border-radius: 20px;
 }
 
 .box2-footer {
@@ -795,10 +789,15 @@ input:checked + label .text-box2-5 {
 .icon-footer {
     width: 100%;
     color: #8fb8ca;
-    font: 24px 'Fredoka';
+    font: 24px 'Fredoka'; 
     margin: 0%;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.icon-footer a {
+    color: #8fb8ca;
 }
 
 .box2-footer p {
